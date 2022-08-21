@@ -6,13 +6,13 @@ import * as controller from './controller';
 const route = Router();
 
 route.post(
-    "/vaccine",
+    "/vacine",
     joiValidator(validation.create),
     controller.create
 );
 
 route.get(
-    "/vaccine-summary",
+    "/vacine-summary",
     joiValidator(validation.list),
     controller.list
 );

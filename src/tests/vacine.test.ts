@@ -14,8 +14,8 @@ var agent = request.agent(app);
 
 describe('Test Vacines', () => {
 
-    it('Should create a vacne successfully', async () => {
-        const res: Response = await agent.post(`/v1/vaccine`).send(vacine);
+    it('Should create a vacine successfully', async () => {
+        const res: Response = await agent.post(`/v1/vacine`).send(vacine[0]);
         expect(res).to.have.status(201);
         expect(res).to.be.a('object');
         expect(res.body.data).to.haveOwnProperty('_id');
@@ -37,8 +37,8 @@ describe('Test Vacines', () => {
     });
 
 
-    it('Should list all fixtures', async () => {
-        const res: Response = await agent.get(`/v1/vaccine-summary`);
+    it('Should get vacine summary', async () => {
+        const res: Response = await agent.get(`/v1/vacine-summary`);
         expect(res).to.have.status(200);
         expect(res.body).to.be.a('object');
         expect(res.body.data).to.be.a('object');
