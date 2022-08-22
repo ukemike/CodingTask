@@ -54,6 +54,5 @@ export type listVacineFunction = (
         dateTo: string,
         range: number,
         sort: string,
-        Region: string,
     }
 ) => Promise<defaultResponseInterface>;

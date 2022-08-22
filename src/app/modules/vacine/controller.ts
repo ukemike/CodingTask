@@ -22,7 +22,6 @@ export const list = async (
         res.status(200).json(await services.list({
             limit: Number(req.query.limit),
             page: Number(req.query.page),
-            Region: req.query.Region as string,
             c: req.query.c as string,
             dateFrom: req.query.dateFrom as string,
             dateTo: req.query.dateTo as string,

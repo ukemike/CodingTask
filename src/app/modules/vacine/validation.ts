@@ -18,7 +18,7 @@ export default {
                 ReportingCountry: Joi.string(),
                 TargetGroup: Joi.string(),
                 Vaccine: Joi.string(),
-                Denominator: Joi.number().integer().positive(),
+                Denominator: Joi.number().integer().positive()
             })
         }
     },
@@ -33,8 +33,7 @@ export default {
                 dateFrom: Joi.string(),
                 dateTo: Joi.string(),
                 range: Joi.number().integer().positive().default(5),
-                sort: Joi.string(),
-                Region: Joi.string(),
+                sort: Joi.string()
             })
 
         }
