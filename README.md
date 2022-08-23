@@ -22,13 +22,13 @@ git clone https://github.com/ukemike/CodingTask.git
 Install dependencies
 
 ```
-  npm install
+npm install
 ```
 
 Create dist folder
 
 ```
-  npm run build
+npm run build
 ```
 
 Run dev script
@@ -50,3 +50,5 @@ npm run dev
 ```
 http://localhost:5000/vacine-summary?c=AT&dateFrom=2020-W10&dateTo=2020-W53&range=5
 http://localhost:5000/create-vacine
+
+## Addtional feature rate limiter was implemented to allow 5 call per minute
