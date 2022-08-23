@@ -5,20 +5,20 @@ export default {
         body: {
             schema: Joi.object({
                 YearWeekISO: Joi.string(),
-                FirstDose: Joi.number().integer().positive(),
+                FirstDose: Joi.number().integer(),
                 FirstDoseRefused: Joi.string(),
-                SecondDose: Joi.number().integer().positive(),
-                DoseAdditional1: Joi.number().integer().positive(),
-                DoseAdditional2: Joi.number().integer().positive(),
+                SecondDose: Joi.number().integer(),
+                DoseAdditional1: Joi.number().integer(),
+                DoseAdditional2: Joi.number().integer(),
                 UnknownDose: Joi.number().integer().positive(),
-                NumberDosesReceived: Joi.number().integer().positive(),
-                NumberDosesExported: Joi.number().integer().positive(),
+                NumberDosesReceived: Joi.number().integer(),
+                NumberDosesExported: Joi.number().integer(),
                 Region: Joi.string(),
                 Population: Joi.string(),
                 ReportingCountry: Joi.string(),
                 TargetGroup: Joi.string(),
                 Vaccine: Joi.string(),
-                Denominator: Joi.number().integer().positive()
+                Denominator: Joi.number().integer()
             })
         }
     },

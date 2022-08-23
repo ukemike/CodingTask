@@ -22,7 +22,7 @@ export interface VacineInterface {
 interface defaultResponseInterface {
     success: boolean,
     message: string,
-    data: VacineInterface | [VacineInterface] | unknown
+    summary: VacineInterface | [VacineInterface] | unknown
 }
 
 export type createVacineFunction = (

@@ -1,22 +1,5 @@
 export const vacine = [
     {
-        "YearWeekISO": "2020-W53",
-        "FirstDose": 0,
-        "FirstDoseRefused": "",
-        "SecondDose": 0,
-        "DoseAdditional1": 0,
-        "DoseAdditional2": 0,
-        "UnknownDose": 0,
-        "NumberDosesReceived": 0,
-        "NumberDosesExported": 0,
-        "Region": "AOT",
-        "Population": "8901064",
-        "ReportingCountry": "AT",
-        "TargetGroup": "ALL",
-        "Vaccine": "JANSS",
-        "Denominator": 7388778
-    },
-    {
         "YearWeekISO": "2020-W10",
         "FirstDose": 0,
         "FirstDoseRefused": "",
@@ -48,6 +31,23 @@ export const vacine = [
         "ReportingCountry": "AT",
         "TargetGroup": "ALL",
         "Vaccine": "MOD",
+        "Denominator": 7388778
+    },
+    {
+        "YearWeekISO": "2020-W53",
+        "FirstDose": 0,
+        "FirstDoseRefused": "",
+        "SecondDose": 0,
+        "DoseAdditional1": 0,
+        "DoseAdditional2": 0,
+        "UnknownDose": 0,
+        "NumberDosesReceived": 0,
+        "NumberDosesExported": 0,
+        "Region": "AOT",
+        "Population": "8901064",
+        "ReportingCountry": "AT",
+        "TargetGroup": "ALL",
+        "Vaccine": "JANSS",
         "Denominator": 7388778
     },
     {
@@ -1223,6 +1223,9 @@ export const vacine = [
         "Vaccine": "NVXD",
         "Denominator": 1543886
     },
+
+
+
     {
         "YearWeekISO": "2021-W01",
         "FirstDose": 0,

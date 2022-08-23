@@ -3,8 +3,7 @@ import { errorMessage } from "iyasunday";
 import Vacines from '../modules/vacine';
 
 export default (app: Application): void => {
-    const apiVersion: string = '/v1';
-    app.use(apiVersion, Vacines);
+    app.use(Vacines);
 
     app.get('/', (req, res) => {
         res.status(200).json({

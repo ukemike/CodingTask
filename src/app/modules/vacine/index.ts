@@ -6,7 +6,7 @@ import * as controller from './controller';
 const route = Router();
 
 route.post(
-    "/vacine",
+    "/create-vacine",
     joiValidator(validation.create),
     controller.create
 );
